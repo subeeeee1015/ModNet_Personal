@@ -1,0 +1,34 @@
+inferpp流程
+
+1.对图像进行抠图  infer.py
+
+2.计算阈值  OTSU.py
+
+3.保存最大连通域，填入2步骤计算出的阈值  zuidaliantongyu.py       _zuida.png
+
+4.对matte图像进行膨胀  dilate.py
+
+6.对sample1进行抠图  mat1.py     _mat2.png
+
+7.将抠出来的重新转化为灰度图再作为alpha图对原图进行抠图
+
+
+
+新方法：
+将最开始的alpha图进行二值化处理      erzhihua.py
+
+利用深度遍历算法找到最大连通域        shendubianli.py
+
+最大连通域图作为遮罩对原来的alpha进行抠图   mat1
+
+重新抠图   mat2
+
+
+
+视频：
+用opencv读取视频文件
+对每一帧进行处理
+然后再整合成视频
+
+
+

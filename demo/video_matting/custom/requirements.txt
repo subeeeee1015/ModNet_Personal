@@ -1,0 +1,9 @@
+numpy
+Pillow
+opencv-python
+torch >= 1.0.0
+torchvision
+tqdm
+
+
+python -m demo.video_matting.custom.run --video example/run.mp4
